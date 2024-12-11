@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 7.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logol.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -21,9 +21,9 @@
   </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Blog of LSK">
 <meta property="og:url" content="http://lishuangke.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Blog of LSK">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
@@ -41,7 +41,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>Blog of LSK</title>
   
 
 
@@ -92,7 +92,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">Blog of LSK</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -155,6 +155,103 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://lishuangke.github.io/2024/12/11/LCR120/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of LSK">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/12/11/LCR120/" class="post-title-link" itemprop="url">LCR120</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-12-11 17:43:08 / Modified: 17:44:49" itemprop="dateCreated datePublished" datetime="2024-12-11T17:43:08+08:00">2024-12-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%88%B7%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">刷题</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%88%B7%E9%A2%98/LCR/" itemprop="url" rel="index"><span itemprop="name">LCR</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/12/11/LCR120/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/12/11/LCR120/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h4><p>设备中存有 <code>n</code> 个文件，文件 <code>id</code> 记于数组 <code>documents</code>。若文件 <code>id</code> 相同，则定义为该文件存在副本。请返回任一存在副本的文件 <code>id</code>。</p>
+<p> <strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：documents = [2, 5, 3, 0, 5, 0]</span><br><span class="line">输出：0 或 5</span><br></pre></td></tr></table></figure>
+
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>0 ≤ documents[i] ≤ n-1</code></li>
+<li><code>2 &lt;= n &lt;= 100000</code></li>
+</ul>
+<h4 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h4><p>hashset判断是否重复</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">`class Solution &#123;`</span><br><span class="line"></span><br><span class="line">  `public int findRepeatDocument(int[] documents) &#123;`</span><br><span class="line"></span><br><span class="line">​    `Set&lt;Integer&gt; hashset = new HashSet&lt;&gt;();`</span><br><span class="line"></span><br><span class="line">​    `for (int i: documents)&#123;`</span><br><span class="line"></span><br><span class="line">​      `if(hashset.contains(i)) return i;`</span><br><span class="line"></span><br><span class="line">​      `hashset.add(i);`</span><br><span class="line"></span><br><span class="line">​    `&#125;`</span><br><span class="line"></span><br><span class="line">​    `return -1;`</span><br><span class="line"></span><br><span class="line">  `&#125;`</span><br><span class="line"></span><br><span class="line">`&#125;`</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://lishuangke.github.io/2024/12/11/index/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -164,7 +261,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Blog of LSK">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -237,7 +334,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Blog of LSK">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -253,7 +350,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-12-11 16:36:11 / Modified: 17:12:58" itemprop="dateCreated datePublished" datetime="2024-12-11T16:36:11+08:00">2024-12-11</time>
+              <time title="Created: 2024-12-11 16:36:11 / Modified: 17:46:38" itemprop="dateCreated datePublished" datetime="2024-12-11T16:36:11+08:00">2024-12-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -294,8 +391,8 @@
 <ol>
 <li>无</li>
 <li>无</li>
-<li><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/">数组中重复的数字</a>  -&gt;本站<a href="/2024/12/11/%E5%89%91%E6%8C%87offer/" title="剑指offer">剑指offer</a></li>
-<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/search-a-2d-matrix-ii/">二维数组中的查找</a></li>
+<li><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/">数组中重复的数字</a>  -&gt;本站 <a href="/2024/12/11/LCR120/" title="LCR120">LCR120</a></li>
+<li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/search-a-2d-matrix-ii/">二维数组中的查找 </a> </li>
 <li><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/">替换空格</a></li>
 <li><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">从尾到头打印链表</a></li>
 <li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">重建二叉树</a></li>
@@ -304,7 +401,7 @@
 <li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/fibonacci-number/">斐波那契数列&#x2F;青蛙跳台阶</a></li>
 <li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/">旋转数组的最小数字</a></li>
 <li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/word-search/">√矩阵中的路径</a></li>
-<li><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/">机器人的运动范围</a> <a href="/2024/12/11/LCR130/" title="LCR130">LCR130</a></li>
+<li><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/">机器人的运动范围</a>  -&gt;本站 <a href="/2024/12/11/LCR130/" title="LCR130">LCR130</a></li>
 <li><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/integer-break/">剪绳子</a></li>
 <li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/number-of-1-bits/">√二进制中1的个数</a>       <a target="_blank" rel="noopener" href="https://leetcode.com/problems/counting-bits/">(升级版)</a></li>
 <li><a target="_blank" rel="noopener" href="https://leetcode.com/problems/powx-n/">√数值的整数次方</a></li>
@@ -389,7 +486,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Blog of LSK">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -534,7 +631,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
